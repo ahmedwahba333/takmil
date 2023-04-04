@@ -1,0 +1,508 @@
+/* start colors */
+:root {
+    --vision: #4d8000;
+    --role: #365a00;
+    --model: #008080;
+    --partners: #005a00;
+    --contact: #008000;
+    --whatsapp: #25D366;
+    --email: #E74033;
+}
+
+body {
+    background-color: rgb(206, 206, 206);
+}
+
+.conIcons {
+    position: sticky;
+    top: 85vh;
+    height: 0;
+    z-index: 10;
+}
+
+.conIcons a {
+    font-size: 50px;
+}
+
+.whatsappicon {
+    color: var(--whatsapp);
+}
+
+.emailicon {
+    color: var(--email);
+}
+
+.whatsappicon:hover {
+    color: #00A784;
+    transition: 0.5s;
+}
+
+.emailicon:hover {
+    color: #C92621;
+    transition: 0.5s;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-item a:hover {
+    color: var(--contact);
+}
+
+.whoUs {
+    background-image: url(../imgs/us.jpg);
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-bottom: 5rem;
+    height: 90vh;
+}
+
+.whoUsheading {
+    font-size: 70px;
+}
+
+.whoUsparag {
+    font-size: 80px;
+}
+
+.cut {
+    display: flex;
+    justify-content: center;
+}
+
+.cut img {
+    width: 80%;
+}
+
+/* start vision */
+.vision {
+    margin: 5rem 0;
+    padding: 3rem 0;
+    background-color: var(--vision);
+    color: white;
+}
+
+
+.conView {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.conView img {
+    height: 200px;
+    border-radius: 10px;
+}
+
+
+/* #mycup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.steam {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-top: -75px;
+    margin-left: 75px;
+    z-index: 0;
+    opacity: 0;
+}
+
+#steam1 {
+    -webkit-animation: steam1 4s ease-out infinite;
+    animation: steam1 4s ease-out infinite;
+}
+
+#steam3 {
+    -webkit-animation: steam1 4s ease-out 1s infinite;
+    animation: steam1 4s ease-out 1s infinite;
+}
+
+@-webkit-keyframes steam1 {
+    0% {
+        transform: translateY(0) translateX(0) scale(0.25);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: translateY(-200px) translateX(-20px) scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes steam1 {
+    0% {
+        transform: translateY(0) translateX(0) scale(0.25);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: translateY(-200px) translateX(-20px) scale(1);
+        opacity: 0;
+    }
+}
+
+#steam2 {
+    -webkit-animation: steam2 4s ease-out 0.5s infinite;
+    animation: steam2 4s ease-out 0.5s infinite;
+}
+
+#steam4 {
+    -webkit-animation: steam2 4s ease-out 1.5s infinite;
+    animation: steam2 4s ease-out 1.5s infinite;
+}
+
+@-webkit-keyframes steam2 {
+    0% {
+        transform: translateY(0) translateX(0) scale(0.25);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: translateY(-200px) translateX(20px) scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes steam2 {
+    0% {
+        transform: translateY(0) translateX(0) scale(0.25);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: translateY(-200px) translateX(20px) scale(1);
+        opacity: 0;
+    }
+}
+
+#cup {
+    z-index: 1;
+}
+
+#cup-body {
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    border-radius: 0 0 150px 150px;
+    background-color: #fff;
+    margin: auto;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#cup-shade {
+    position: relative;
+    height: 300px;
+    width: 200px;
+    background-color: #F3F3F3;
+    display: inline-block;
+    margin-left: 42%;
+    margin-top: -3px;
+    transform: rotate(50deg);
+    z-index: 1;
+}
+
+#cup-handle {
+    position: relative;
+    height: 75px;
+    width: 80px;
+    border-radius: 0 150px 150px 0;
+    border: 15px solid #F3F3F3;
+    margin-bottom: 95px;
+    margin-left: 250px;
+    display: inline-block;
+    z-index: 0;
+}
+
+#saucer {
+    position: absolute;
+    height: 30px;
+    width: 300px;
+    border-radius: 0 0 100px 100px;
+    background-color: #F9F9F9;
+    margin-top: -32px;
+    margin-left: 5px;
+    z-index: 2;
+}
+
+#shadow {
+    height: 10px;
+    width: 300px;
+    border-radius: 50%;
+    margin-top: -5px;
+    margin-left: 6px;
+    background-color: #7bb8d4;
+}
+
+/* end vision */
+
+
+.role {
+    margin: 5rem 0;
+    padding: 3rem 0;
+    background-image: linear-gradient(var(--role), var(--model));
+    color: white;
+}
+
+.role h3 {
+    font-size: 40px;
+}
+
+.role p {
+    font-size: 30px;
+}
+
+/* start model */
+.model {
+    margin: 5rem 0;
+    padding: 3rem 0;
+    background-color: var(--model);
+    color: white;
+}
+
+
+.ha-logo {
+    width: 200px;
+}
+
+
+
+.ha-logo path,.ha-logo 
+circle {
+    fill: none;
+    stroke: #1b4d6e;
+    stroke-width: 0.125px;
+    stroke-linejoin: round;
+
+   
+}
+.ha-logo  .house {
+    stroke-linecap: round;
+    stroke-width: .3px;
+}
+
+.loading.ha-logo circle {
+    animation: nodes 20s linear infinite;
+}
+
+.loading.ha-logo .house {
+    animation: house 20s ease infinite;
+}
+
+.loading.ha-logo .circut {
+    animation: circut 20s cubic-bezier(.7, .1, .1, .9) infinite;
+}
+
+
+@keyframes house {
+    0% {
+        stroke-dashoffset: -50;
+        stroke-dasharray: 50 50
+    }
+
+    45% {
+        stroke-dashoffset: -100
+    }
+
+    50% {
+        stroke: #1b4d6e
+    }
+
+    60% {
+        stroke: #fff
+    }
+
+    75% {
+        stroke: #1b4d6e
+    }
+
+    80% {
+        stroke-dashoffset: -100
+    }
+
+    100% {
+        stroke-dashoffset: -130;
+        stroke-dasharray: 50 50
+    }
+}
+
+@keyframes circut {
+    0% {
+        stroke-dasharray: 20 20;
+        stroke-dashoffset: -20
+    }
+
+    13% {
+        stroke-dashoffset: -20
+    }
+
+    50% {
+        stroke-dashoffset: -40;
+        stroke: #1b4d6e;
+    }
+
+    60% {
+        stroke: #fff;
+    }
+
+    70% {
+        stroke: #1b4d6e;
+    }
+
+    85% {
+        stroke-dashoffset: -40;
+    }
+
+    100% {
+        stroke-dashoffset: -60;
+        stroke-dasharray: 20 20
+    }
+}
+
+@keyframes nodes {
+    0% {
+        stroke-dasharray: 0 4
+    }
+
+    25% {
+        stroke-dasharray: 0 4
+    }
+
+    35% {
+        stroke-dasharray: 4 0;
+        stroke: #1b4d6e
+    }
+
+    41% {
+        fill: none;
+    }
+
+    42% {
+        fill: #1b4d6e;
+    }
+
+    55% {
+        fill: none;
+        stroke: #1b4d6e;
+    }
+
+    65% {
+        fill: #fff;
+        stroke: #fff;
+    }
+
+    75% {
+        stroke: #1b4d6e;
+        fill: none;
+        stroke-dasharray: 4 0;
+    }
+
+    85% {
+        fill: #1b4d6e;
+        stroke: #1b4d6e;
+    }
+
+    93% {
+        fill: none;
+        stroke-dasharray: 4 0;
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: -4;
+        stroke-dasharray: 0 4;
+    }
+}
+
+/* @for $i from 1 to 15 {
+    .ha-logo circle:nth-child(#{$i}n) {
+        animation-delay: $i * -($time * 0.009);
+    }
+} */
+
+
+/* end model */
+
+
+/* start partners */
+.partners {
+    margin: 5rem 0;
+    padding: 3rem 0;
+    background-color: var(--partners);
+    color: white;
+}
+
+
+  .mypartner {
+    width: 30vw;
+    height: 15rem;
+    overflow: visible;
+  }
+  .eins {
+    transform-origin: 60px 60px;
+    transform: rotateZ(60deg);
+  }
+  .zwei {
+    transform-origin: 60px 60px;
+    transform: rotateZ(-60deg);
+  }
+  .all {
+    transform-origin: 60px 60px;
+    transform: scaleX(.32);
+  }
+  .group {
+    animation: turnIt 2s linear infinite;
+    transform-origin: 60px 60px;
+    transform-box: content-box;
+  }
+  .go {
+     transform: translateY(4px);
+  }
+  @keyframes turnIt {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+/* end partners */
+.wid{
+    width: 560px;
+}
+.contact {
+    margin-top: 5rem;
+    padding: 3rem 0;
+    background-image: linear-gradient(var(--contact), var(--role));
+    color: white;
+}
+
+.icons a {
+    color: white;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.icons a:hover {
+    color: rgb(169, 169, 169);
+    transition: 0.5s;
+
+}
